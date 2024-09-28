@@ -3,16 +3,15 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(void)
- {
- 	char c;
- 	int i;
- 	
- 	printf("input a number :");
-	scanf("%c",&c);
+int main(int argc, char *argv[]) {
 	
-	i=c;
-	printf("The input number is %i/n", i);
+	char character1;
+		
+	printf("enter a character : ");
+	scanf("%c", &character1 );
+	
+	printf("the next character of %c (%d) is %c (%d) ", character1, character1, character1 +1, character1 +1  );
 	
 	return 0;
 }
+
